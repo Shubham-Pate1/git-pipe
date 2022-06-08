@@ -13,3 +13,9 @@ jobs:
         - name: Check the file
           run: ls -lrt
 
+        - uses: actions/setup-java@v3
+          with:
+            distributions: 'temurin'
+            java-version: '17'
+
+          - run: java -cp java HelloworldApp
